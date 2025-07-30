@@ -3,11 +3,11 @@ import math
 
 # Alpha
 
-alpha_degree1=-90
-alpha_degree2=0
-alpha_degree3=0
-alpha_degree4=-90
-alpha_degree5=0
+alpha_degree1= float(input("Enter the Alpha Angle of First Joint :"))
+alpha_degree2= float(input("Enter the Alpha Angle of Second Joint :"))
+alpha_degree3= float(input("Enter the Alpha Angle of Third Joint :"))
+alpha_degree4= float(input("Enter the Alpha Angle of Fourth Joint :"))
+alpha_degree5= float(input("Enter the Alpha Angle of Fifth Joint :"))
 alpha1=np.deg2rad(alpha_degree1)
 alpha2=np.deg2rad(alpha_degree2)
 alpha3=np.deg2rad(alpha_degree3)
@@ -16,11 +16,11 @@ alpha5=np.deg2rad(alpha_degree5)
 
 # Theta
 
-theta_degree1=93
-theta_degree2=-18.3
-theta_degree3=-149.9
-theta_degree4=-9.2
-theta_degree5=16.2
+theta_degree1= float(input("Enter the Theta Angle of First Joint :"))
+theta_degree2= float(input("Enter the Theta Angle of Second Joint :"))
+theta_degree3= float(input("Enter the Theta Angle of Third Joint :"))
+theta_degree4= float(input("Enter the Theta Angle of Fourth Joint :"))
+theta_degree5= float(input("Enter the Theta Angle of Fifth Joint :"))
 theta1=np.deg2rad(theta_degree1)
 theta2=(np.deg2rad(theta_degree2)-1.38)
 theta3=(np.deg2rad(theta_degree3)+2.73)
@@ -29,19 +29,19 @@ theta5=np.deg2rad(theta_degree5)
 
 #
 
-a1=0
-a2=289.48866
-a3=351.158796
-a4=76
-a5=0
+a1= float(input("Enter the Link Length of First Joint a1 :"))
+a2= float(input("Enter the Link Length of Second Joint a2 :"))
+a3= float(input("Enter the Link Length of Third Joint a3 :"))
+a4= float(input("Enter the Link Length of Fourth Joint a4 :"))
+a5= float(input("Enter the Link Length of Fifth Joint a5 :"))
 
 # Length of link
 
-d1=267
-d2=0
-d3=0
-d4=0
-d5=97
+d1= float(input("Enter the Joint Distance of First Joint d1 :"))
+d2= float(input("Enter the Joint Distance of Second Joint d2 :"))
+d3= float(input("Enter the Joint Distance of Third Joint d3 :"))
+d4= float(input("Enter the Joint Distance of Fourth Joint d4 :"))
+d5= float(input("Enter the Joint Distance of Fifth Joint d5 :"))
 
 #joint 1
 
@@ -108,4 +108,3 @@ Y = TotalEffect[1, 3]
 print('Postion of the arm in Y axis is : ', Y )
 Z = TotalEffect[2, 3]
 print('Postion of the arm in Z axis is : ', Z )
-
